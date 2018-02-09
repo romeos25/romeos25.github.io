@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <title>º GERNEYS. º</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="icon" type="img/Fire.gif" href="img/Fire.gif" sizes="128x128">
+  </head>
+
+  <style>
+    body {font-family: "Lato", sans-serif}
+    h1 {font-family: "Nanum Pen Script", sans-serif}
+    body, html {height: 100%}
+    .bgimg {
+    background-image: url(img/coming_4.jpg);
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    }
+    p {
+      text-align: center;
+    }
+    .img{
+      background-image: url(img/logo_glitch.png);
+    }
+  </style>
+  <body>
+    <div class="bgimg w3-display-container w3-animate-opacity">
+      <div class="w3-display-topleft w3-padding-large"></div>
+      <div class="w3-display-middle">
+        <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+        <hr class="w3-border-black" style="margin:auto;width:40%">
+        <!-- Display the countdown timer in an element -->
+        <h1 class="w3-medium w3-animate-top w3-center">BURN BABY BURN!</h1>
+        <p id="demo" class="w3-medium w3-animate-top"></p>
+
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 11, 2018 18:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+          // Get todays date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now an the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + " : " + hours + " : "
+          + minutes + " : " + seconds + "";
+
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+</script>
+      </div>
+      <div class="w3-display-bottomleft w3-padding-large w3-tiny">
+        A NEW JOURNEY WILL BEGIN!<br>
+        º SИØШMДИ º <br>
+      </div>
+      <div class="w3-display-bottomright w3-padding-large w3-text-indigo w3-tiny">
+        CSS BY W3SCHOOLS
+      </div>
+    </div>
+  </body>
+</html>

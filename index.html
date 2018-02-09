@@ -1,79 +1,181 @@
 <!DOCTYPE html>
 <html>
-  <title>º GERNEYS. º</title>
+  <title>º SИØШMДИ º</title>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1>
+
+    <!-- Bootstrap + w3schools + cloudflare CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script"> 
-    <link rel="icon" type="img/Fire.gif" href="img/Fire.gif" sizes="128x128">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme|Raleway|Barlow+Condensed|Noto+Sans|Titillium+Web|Roboto">
+    <!-- custom-logo-on-tab-bar -->
+    <link rel="icon" type="img/logo_.jpg" href="img/logo_.jpg" sizes="128x128">
   </head>
 
   <style>
-    body {font-family: "Lato", sans-serif}
-    h1 {font-family: "Nanum Pen Script", sans-serif}
-    body, html {height: 100%}
-    .bgimg {
-    background-image: url(img/coming_4.jpg);
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
+    body{font-family: "Titillium Web", san-serif}
+    i, div{color: #315fd4;}
+    p,p1,h2,h5,h6{color: #9090a8;}
+
+    <!--link to fb-->
+    p1:link{
+      color: #9090a8;
     }
-    p {
-      text-align: center;
+    p1:visited{
+      color: #315fd4;
     }
-    .img{
-      background-image: url(img/logo_glitch.png);
+    p1:hover{
+      color: #a8a890;
+    }
+    p1:active{
+      color: #9090a8;
+    }
+
+    /*from line 26 to 53 is gridient color animation*/
+    body {
+	     width: 100wh;
+	      height: 90vh;
+	       color: #fff;
+	        background: linear-gradient(-45deg, #5084db, #509ddb, #a876ec, #ee7cd7);
+	         background-size: 800% 800%;
+	          -webkit-animation: Gradient 15s ease infinite;
+	           -moz-animation: Gradient 15s ease infinite;
+	            animation: Gradient 15s ease infinite;
+    }
+
+    @-webkit-keyframes Gradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    @-moz-keyframes Gradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    @keyframes Gradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
     }
   </style>
   <body>
-    <div class="bgimg w3-display-container w3-animate-opacity">
-      <div class="w3-display-topleft w3-padding-large"></div>
-      <div class="w3-display-middle">
-        <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-        <hr class="w3-border-black" style="margin:auto;width:40%">
-        <!-- Display the countdown timer in an element -->
-        <h1 class="w3-medium w3-animate-top w3-center">BURN BABY BURN!</h1>
-        <p id="demo" class="w3-medium w3-animate-top"></p>
+    <!--page-container-->
+    <div class="w3-content w3-margin-top" style="max-width:1920px">
+      <div class="w3-row-padding">
+        <!--personal info-->
+        <div class="col-sm-5 w3-third">
+          <div class="w3-white">
+            <div class="w3-display-container">
+              <img src="img/cat.gif" style="width:100%">
+            </div>
+            <div class="w3-container">
+              <p class="w3-large"> <i class="fa fa-caret-right w3-margin-right w3-large"></i>
+                <b />Wisawa Ploypradub
+              </p>
+              <p class="w3-medium"> <i class="w3-margin-left fa fa-caret-right w3-margin-right w3-large"></i>
+                <b />Life is a Paper Plane
+                  <i><a href="https://youtu.be/t_RAOpfL9mE" target="_blank">
+                  <img src="img/icons/paper_.png" width="7%" class="w3-margin-left fa-pull-right w3-animate-fading">
+                  </a></i>
+              </p>
+              <p> <i class="fa fa-briefcase w3-margin-right w3-large"></i>
+                <b />Infrastructure
+              </p>
+              <p> <i class="fa fa-home w3-margin-right w3-large"></i>
+                <b />Bangkok, Thailand
+              </p>
+              <p1> <i class="fa fa-facebook-official w3-margin-right w3-large"></i>
+                <b /><a href ="https://kmi.tl/ojK1L" target="_blank" style="text-decoration: none">Rogers Jones</a>
+              </p1>
+              <p1 class="w3-margin-left"> <i class="fa fa-instagram w3-margin-right w3-large"></i>
+                <b /><a href="https://kmi.tl/XbUAq" target="_blank" style="text-decoration: none">rogersthehuman</a>
+              </p1>
+              <hr>
 
-        <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Feb 11, 2018 18:00:00").getTime();
+              <p class="w3-large"><i class="fa fa-bug w3-margin-right w3-large"></i>
+                <b />Skills
+              </p>
+              <p>Adobe Photoshop</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width: 70%">70%</div>
+              </div>
+              <p>Photography</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width: 40%">40%</div>
+              </div>
+              <p>Linux</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width: 30%">30%</div>
+              </div>
+              <p>Docker</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width: 30%">30%</div>
+              </div>
+              <p>Kali Linux</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width: 10%">10%</div>
+              </div>
+              <p>HTML</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width: 10%">10%</div>
+              </div>
+              <p>Rainbow Six Siege</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-red" style="width: 80%">80%</div>
+              </div>
+              <hr>
 
-        // Update the count down every 1 second
-        var x = setInterval(function() {
+              <p class="w3-large"><i class="fa fa-language w3-margin-right w3-large"></i>
+                <b />Languages
+              </p>
+              <p>Thai</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width: 100%">100%</div>
+              </div>
+              <p>English</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width: 80%">80%</div>
+              </div>
+              <p>Japanese</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width: 10%">10%</div>
+              </div>
+              <br>
+              <p1 class="fa-pull-right"> <i class="fa fa-paw w3-margin-right w3-large"></i>
+                <b /><a href ="https://www.w3schools.com/w3css/default.asp" target="_blank" style="text-decoration: none">Powered by w3.css</a>
+              </p1><br><br>
+            </div>
+          </div>
+        </div>
 
-          // Get todays date and time
-          var now = new Date().getTime();
+        <!-- education -->
+        <div class="col-sm-5 w3-twothird">
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge"></i>
+              Education
+            </h2>
+            <div class="w3-container">
+              <h5><b /> Maryvit School</h5>
+              <p style="color: #315fd4"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2005-2017</p>
+              <p class="w3-text-black">Elementary to High School</p>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5><b />King Mongkut's Institute of Technology Ladkrabang</h5>
+              <p style="color: #315fd4"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 -
+                <span class="w3-tag w3-round w3-indigo">current</span></p>
+              <p class="w3-text-black">Bachelor Degree of Computer Science</p>
+              <br>
+            </div>
+          </div>
+        </div>
 
-          // Find the distance between now an the count down date
-          var distance = countDownDate - now;
-
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          // Display the result in the element with id="demo"
-          document.getElementById("demo").innerHTML = days + " : " + hours + " : "
-          + minutes + " : " + seconds + "";
-
-          // If the count down is finished, write some text
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
-        }, 1000);
-</script>
-      </div>
-      <div class="w3-display-bottomleft w3-padding-large w3-tiny">
-        A NEW JOURNEY WILL BEGIN!<br>
-        º SИØШMДИ º
-      </div>
-      <div class="w3-display-bottomright w3-padding-large w3-text-indigo w3-tiny">
-        CSS BY W3SCHOOLS
       </div>
     </div>
   </body>
